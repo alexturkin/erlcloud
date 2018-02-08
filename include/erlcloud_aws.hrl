@@ -97,6 +97,10 @@
           mms_scheme="https://"::string(),
           mms_host="metering.marketplace.us-east-1.amazonaws.com"::string(),
           mms_port=443::non_neg_integer(),
+          %% TODO billing or pricing? or budgets like in CLI?
+          billing_scheme="https://"::string(),
+          billing_host="budgets.amazonaws.com"::string(),
+          billing_port=443::non_neg_integer(),
           access_key_id::string()|undefined|false,
           secret_access_key::string()|undefined|false,
           security_token=undefined::string()|undefined,

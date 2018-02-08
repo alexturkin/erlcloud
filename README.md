@@ -34,6 +34,7 @@ Service APIs implemented:
 - Short Token Service (STS)
 - Simple Notification Service (SNS)
 - Web Application Firewall (WAF)
+- AWS Billing and Cost Management
 - and more to come
 
 Majority of API functions have been implemented.
