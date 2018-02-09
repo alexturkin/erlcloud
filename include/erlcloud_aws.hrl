@@ -97,6 +97,17 @@
           mms_scheme="https://"::string(),
           mms_host="metering.marketplace.us-east-1.amazonaws.com"::string(),
           mms_port=443::non_neg_integer(),
+
+          %% AWS Billing and Cost Management contains of
+          %% Budgets and Cost & Usage Reports (CUR) services
+          %% https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/api-reference.html
+          budgets_scheme="https://"::string(),
+          budgets_host="budgets.amazonaws.com"::string(),
+          budgets_port=443::non_neg_integer(),
+          cur_scheme="https://"::string(),
+          cur_host="cur.us-east-1.amazonaws.com"::string(),
+          cur_port=443::non_neg_integer(),
+
           access_key_id::string()|undefined|false,
           secret_access_key::string()|undefined|false,
           security_token=undefined::string()|undefined,
